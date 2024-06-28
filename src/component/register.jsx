@@ -14,7 +14,7 @@ function handleSubmit()
 if(password==repassword){
   setResult({username,email,password,repassword});
   setError(false);
-  //navigate('/logos');
+  navigate('/logos');
   axios.post('http://localhost:5000/register',{
     username,
     email,
